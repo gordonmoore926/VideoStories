@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2430C1BA53D4B0296BE70352 /* Pods_VideoStories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD56751A11F2A5231EDA45D3 /* Pods_VideoStories.framework */; };
+		B707A5471FA01DAA009A1A1F /* LoginMoreWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B707A5461FA01DAA009A1A1F /* LoginMoreWays.swift */; };
+		B707A54B1FA02838009A1A1F /* LoginPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B707A54A1FA02838009A1A1F /* LoginPhone.swift */; };
 		B71CB46D1F97C13900C1643C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB46C1F97C13900C1643C /* AppDelegate.swift */; };
-		B71CB46F1F97C13900C1643C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB46E1F97C13900C1643C /* FirstViewController.swift */; };
-		B71CB4711F97C13900C1643C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB4701F97C13900C1643C /* SecondViewController.swift */; };
 		B71CB4741F97C13900C1643C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71CB4721F97C13900C1643C /* Main.storyboard */; };
 		B71CB4761F97C13900C1643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71CB4751F97C13900C1643C /* Assets.xcassets */; };
 		B71CB4791F97C13900C1643C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71CB4771F97C13900C1643C /* LaunchScreen.storyboard */; };
 		B71CB4841F97C13900C1643C /* VideoStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB4831F97C13900C1643C /* VideoStoriesTests.swift */; };
 		B71CB48F1F97C1CB00C1643C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71CB48E1F97C1CB00C1643C /* GoogleService-Info.plist */; };
+		B7AA26281FA0445200847F07 /* LoginEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA26271FA0445200847F07 /* LoginEmail.swift */; };
+		B7AA262E1FA047B800847F07 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA262D1FA047B800847F07 /* ForgotPassword.swift */; };
+		B7D1B89A1FA00563002461CE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1B8991FA00563002461CE /* HomeScreen.swift */; };
 		FF739E5DE616390A0B8D434D /* Pods_VideoStoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92742E39EFFFCC911B98C4FB /* Pods_VideoStoriesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +37,10 @@
 		888B42FF2427B6EB356E9B7F /* Pods-VideoStories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoStories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoStories/Pods-VideoStories.debug.xcconfig"; sourceTree = "<group>"; };
 		92742E39EFFFCC911B98C4FB /* Pods_VideoStoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoStoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3CD948E70BB4B28E7D75B0 /* Pods-VideoStoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoStoriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoStoriesTests/Pods-VideoStoriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B707A5461FA01DAA009A1A1F /* LoginMoreWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMoreWays.swift; sourceTree = "<group>"; };
+		B707A54A1FA02838009A1A1F /* LoginPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhone.swift; sourceTree = "<group>"; };
 		B71CB4691F97C13900C1643C /* VideoStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71CB46C1F97C13900C1643C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B71CB46E1F97C13900C1643C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B71CB4701F97C13900C1643C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B71CB4731F97C13900C1643C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B71CB4751F97C13900C1643C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B71CB4781F97C13900C1643C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +49,9 @@
 		B71CB4831F97C13900C1643C /* VideoStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStoriesTests.swift; sourceTree = "<group>"; };
 		B71CB4851F97C13A00C1643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71CB48E1F97C1CB00C1643C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7AA26271FA0445200847F07 /* LoginEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmail.swift; sourceTree = "<group>"; };
+		B7AA262D1FA047B800847F07 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		B7D1B8991FA00563002461CE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		BD56751A11F2A5231EDA45D3 /* Pods_VideoStories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoStories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CCD391A2E6AA957B7D17E5 /* Pods-VideoStoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoStoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoStoriesTests/Pods-VideoStoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				B71CB46C1F97C13900C1643C /* AppDelegate.swift */,
-				B71CB46E1F97C13900C1643C /* FirstViewController.swift */,
-				B71CB4701F97C13900C1643C /* SecondViewController.swift */,
 				B71CB4721F97C13900C1643C /* Main.storyboard */,
+				B7AA26271FA0445200847F07 /* LoginEmail.swift */,
+				B707A54A1FA02838009A1A1F /* LoginPhone.swift */,
+				B707A5461FA01DAA009A1A1F /* LoginMoreWays.swift */,
+				B7D1B8991FA00563002461CE /* HomeScreen.swift */,
+				B7AA262D1FA047B800847F07 /* ForgotPassword.swift */,
 				B71CB4751F97C13900C1643C /* Assets.xcassets */,
 				B71CB4771F97C13900C1643C /* LaunchScreen.storyboard */,
 				B71CB47A1F97C13900C1643C /* Info.plist */,
@@ -348,9 +357,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71CB4711F97C13900C1643C /* SecondViewController.swift in Sources */,
 				B71CB46D1F97C13900C1643C /* AppDelegate.swift in Sources */,
-				B71CB46F1F97C13900C1643C /* FirstViewController.swift in Sources */,
+				B7D1B89A1FA00563002461CE /* HomeScreen.swift in Sources */,
+				B707A54B1FA02838009A1A1F /* LoginPhone.swift in Sources */,
+				B707A5471FA01DAA009A1A1F /* LoginMoreWays.swift in Sources */,
+				B7AA26281FA0445200847F07 /* LoginEmail.swift in Sources */,
+				B7AA262E1FA047B800847F07 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

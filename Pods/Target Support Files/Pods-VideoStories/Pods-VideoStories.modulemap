@@ -1,0 +1,6 @@
+framework module Pods_VideoStories {
+  umbrella header "Pods-VideoStories-umbrella.h"
+
+  export *
+  module * { export * }
+}
