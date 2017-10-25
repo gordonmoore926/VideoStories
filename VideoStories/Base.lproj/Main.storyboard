@@ -31,6 +31,9 @@
                                 <state key="normal" title="Create an account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateAccountButton:" destination="Hke-eD-Zp4" eventType="touchUpInside" id="zsm-bL-4HW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-2K-vTo">
                                 <rect key="frame" x="24" y="550" width="327" height="52"/>
@@ -61,11 +64,188 @@
                     <connections>
                         <segue destination="VEa-k4-Sp9" kind="show" identifier="HomeToMoreWays" id="bUz-zb-Snx"/>
                         <segue destination="743-iq-IZT" kind="show" identifier="HomeToEmailLogin" id="LXl-hT-da8"/>
+                        <segue destination="4Lp-ZN-nA6" kind="show" identifier="HomeToCreateAccount" id="8KS-yE-lgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGR-bx-Q6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="210.40000000000001" y="6.746626686656672"/>
+        </scene>
+        <!--Create Account-->
+        <scene sceneID="Wyq-yo-f26">
+            <objects>
+                <viewController id="4Lp-ZN-nA6" customClass="CreateAccount" customModule="VideoStories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMw-Eq-wqT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABx-Pf-JPk">
+                                <rect key="frame" x="24" y="120" width="315" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jM-X9-pOb">
+                                <rect key="frame" x="24" y="210" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.72537962147887325" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Phone #">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPz-E1-yya">
+                                <rect key="frame" x="24" y="270" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.72537962150000002" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateAccountEmailButton:" destination="4Lp-ZN-nA6" eventType="touchUpInside" id="OgX-6N-EIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-07-1tj">
+                                <rect key="frame" x="24" y="330" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.72537962150000002" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OP7-16-2gH"/>
+                    </view>
+                    <connections>
+                        <segue destination="xgz-Jy-Wl7" kind="show" identifier="CreateAccountToEmail" id="GHy-Da-y0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSI-Xd-sGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="-783"/>
+        </scene>
+        <!--Create Account Email-->
+        <scene sceneID="xeB-9Q-hY8">
+            <objects>
+                <viewController id="xgz-Jy-Wl7" customClass="CreateAccountEmail" customModule="VideoStories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yrc-ax-kGU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create an account with email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuZ-bx-wW0">
+                                <rect key="frame" x="24" y="135" width="317" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-rE-PsV">
+                                <rect key="frame" x="24" y="195" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GV4-J7-IRN">
+                                <rect key="frame" x="24" y="268" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-VN-KQD">
+                                <rect key="frame" x="24" y="342" width="327" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27756382039999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateAccountButton:" destination="xgz-Jy-Wl7" eventType="touchUpInside" id="Sgq-Rb-kAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Cdd-Re-rIF"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="9kZ-rE-PsV" id="nQJ-EU-aVI"/>
+                        <outlet property="password" destination="GV4-J7-IRN" id="sF6-tj-FgV"/>
+                        <segue destination="UEJ-bk-xjR" kind="show" identifier="CreateAccountEmailToHome" id="NNs-uW-ujf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Np7-9g-Bwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="-1001"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="8U2-OI-430">
+            <objects>
+                <viewController id="GVR-RE-0ku" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0p5-x8-guV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notifications Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrr-wN-VIA">
+                                <rect key="frame" x="24" y="135" width="317" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9e0-Xh-TME"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="RMN-Lq-qaU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlV-3K-xcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4375" y="-172"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="ftW-lI-jOw">
+            <objects>
+                <viewController id="6nN-48-rKa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3TU-1p-Pnz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Groups Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxN-GL-L1c">
+                                <rect key="frame" x="24" y="135" width="317" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="vZ9-85-Vpf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="pfK-kx-ejL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wK-gy-ZWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4350" y="-1013"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Sf1-4n-Ec7">
+            <objects>
+                <tabBarController id="UEJ-bk-xjR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9pN-tY-eAW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6nN-48-rKa" kind="relationship" relationship="viewControllers" id="7ah-8h-VAm"/>
+                        <segue destination="GVR-RE-0ku" kind="relationship" relationship="viewControllers" id="Kdl-Ox-fKc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5R-nj-gio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="-240"/>
         </scene>
         <!--Login More Ways-->
         <scene sceneID="4UR-Lg-XBR">
@@ -119,6 +299,9 @@
                                 <state key="normal" title="Create an account">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateAccountFromLogin:" destination="VEa-k4-Sp9" eventType="touchUpInside" id="B1T-ic-Lvh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,6 +310,7 @@
                     <connections>
                         <segue destination="pt3-MR-Yk9" kind="show" identifier="MoreLoginToPhoneLogin" id="don-H3-Dz7"/>
                         <segue destination="743-iq-IZT" kind="show" identifier="MoreLoginToEmailLogin" id="WFr-nl-074"/>
+                        <segue destination="4Lp-ZN-nA6" kind="show" identifier="MoreLoginToCreateAccount" id="YZv-uD-hRB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcG-nH-98g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,6 +384,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="LoginButton:" destination="743-iq-IZT" eventType="touchUpInside" id="GQd-R7-nWR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-cg-O33">
                                 <rect key="frame" x="24" y="415" width="344" height="20"/>
@@ -216,7 +403,10 @@
                         <viewLayoutGuide key="safeArea" id="nlq-ul-MBJ"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="hKm-q0-IFD" id="rt6-mN-ltq"/>
+                        <outlet property="password" destination="8n1-oT-TX3" id="vsQ-Qn-tza"/>
                         <segue destination="VfJ-dG-rM7" kind="show" identifier="EmailLoginToForgotPassword" id="wXP-dZ-Bfu"/>
+                        <segue destination="UEJ-bk-xjR" kind="show" identifier="LoginEmailToHome" id="cHU-nG-Lhk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VB7-gg-0Gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,6 +472,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LXl-hT-da8"/>
+        <segue reference="WFr-nl-074"/>
+        <segue reference="cHU-nG-Lhk"/>
+        <segue reference="YZv-uD-hRB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginEmail: UIViewController {
 
@@ -23,6 +24,21 @@ class LoginEmail: UIViewController {
     
     @IBAction func ForgotPasswordButton(_ sender: Any) {
         performSegue(withIdentifier: "EmailLoginToForgotPassword", sender: self)
+    }
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func LoginButton(_ sender: Any) {
+        if let email_param = email.text, let password_param = password.text {
+            Auth.auth().signIn(withEmail: email_param, password: password_param) { (user, error) in
+                if error == nil {
+                    self.performSegue(withIdentifier: "LoginEmailToHome", sender: self)
+                } else {
+                    // registration failed
+                }
+            }
+        }
     }
     
     /*

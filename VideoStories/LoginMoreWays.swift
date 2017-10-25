@@ -29,6 +29,11 @@ class LoginMoreWays: UIViewController {
         performSegue(withIdentifier: "MoreLoginToEmailLogin", sender: self)
     }
     
+    @IBAction func CreateAccountFromLogin(_ sender: Any) {
+        performSegue(withIdentifier: "MoreLoginToCreateAccount", sender: self)
+    }
+    
+    
     
     
     /*

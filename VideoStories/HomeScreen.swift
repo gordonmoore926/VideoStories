@@ -30,6 +30,9 @@ class HomeScreen: UIViewController {
         performSegue(withIdentifier: "HomeToEmailLogin", sender: self)
     }
     
+    @IBAction func CreateAccountButton(_ sender: Any) {
+        performSegue(withIdentifier: "HomeToCreateAccount", sender: self)
+    }
     
     
     
