@@ -1,14 +1,14 @@
 //
-//  ForgotPassword.swift
+//  Groups.swift
 //  VideoStories
 //
-//  Created by Gordon Moore on 10/25/17.
+//  Created by Gordon Moore on 11/13/17.
 //  Copyright © 2017 GMAL. All rights reserved.
 //
 
 import UIKit
 
-class ForgotPassword: UIViewController {
+class Groups: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
